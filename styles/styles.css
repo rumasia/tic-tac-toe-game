@@ -1,0 +1,143 @@
+
+body{
+    background-color: rgb(248, 245, 240);
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(163, 33, 77);
+    color: white;
+    text-align: center;
+  margin-bottom: 3rem;
+    padding: 2rem;
+}
+#flex-cards{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    color: rgb(126, 11, 49);
+    width: 90%;
+    max-width: 40rem;
+    margin: 1rem auto;
+    
+}
+div{
+    background-color: rgb(221, 215, 207);
+    padding: 1rem;
+   margin: 1rem;
+  text-align: center;
+  width: 50%;
+  border-radius: 4px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+div h2{
+    font-size: 1rem;
+}
+div h3{
+    font-size: 1.5rem;
+}
+
+input{
+    display: block;
+    
+}
+
+.overlay,
+#backdrop{
+    display: none;
+}
+
+.player-symbol{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#new-game-btn{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 3rem;
+}
+.btn{
+font: inherit;
+background-color: rgb(167, 23, 71);
+color: white;
+border: 1px solid  rgb(167, 23, 71);
+border-radius: 4px;
+padding: 0.5rem 1.5rem;
+cursor: pointer;
+}
+.btn-alt{
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(180, 34, 83);
+}
+.btn:hover{
+    background-color: rgb(154, 13, 60);
+    border-color: rgb(154, 13, 60);
+}
+.btn-alt:hover{
+    background-color: rgb(207, 167, 180);
+    border-color: transparent;
+}
+.overlay{
+    position: fixed;
+    top:3
+    0%;
+    left: 25%;
+    width: 50%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+
+
+}
+#backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+}
+#form-control{
+    padding: 1rem;
+   
+   margin:0.5rem 1.5rem ;
+   text-align: center;
+}
+.error input{
+    background-color: rgb(250, 191, 191);
+    border-color: rgb(229, 9, 9);
+    color: rgb(229, 9, 9);
+}
+.error label{
+    color: rgb(229, 9, 9);
+}
+
+#form-control input{
+width: 40%;
+font: inherit;
+padding: 0.35rem;
+border: 1px solid rgb(205, 197, 197);
+margin: 0 auto;
+
+}
+#form-control label{
+    font-weight: bold;
+   
+}
+
+@media (min-width:48rem) {
+    .overlay{
+        left: calc(50%-20rem);
+        width: 40rem;
+    }
+}

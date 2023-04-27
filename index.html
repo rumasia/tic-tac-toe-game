@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div id="backdrop"></div>
+    <header>
+        <h1>Play Tic, Tac, Toe</h1>
+        <p>Built with HTML,CSS and Javascript and - of course - lots of love!</p>
+    </header>
+    <main>
+        
+        <aside class="overlay" id="form-control" >
+            <h1>Choose your name</h1>
+           
+            <form>
+            <label for="player-name">Player name</label>
+            <input type="text" id="players-name" name="playerName" required>
+        <p id="errorMessage"></p>
+            <button type="button" class="btn btn-alt" id="cancel-btn">Cancel</button>
+            <button class="btn" type="submit">Confirm</button>
+      
+        </form>
+        </aside>
+    <section id="flex-cards">
+        <div id="player-1-data">
+            <h2>Player 1</h2>
+            <h3>PLAYER NAME</h3>
+            <p class="player-symbol">X</p>
+            <button class="btn btn-alt" id="edit-Player1-btn" data-playerid="1">Edit</button>
+        </div>
+         <div id="player-2-data">
+        <h2>Player 2</h2>
+        <h3>PLAYER NAME</h3>
+        <p class="player-symbol">O</p>
+        <button class="btn btn-alt" id="edit-Player2-btn" data-playerid="2">Edit</button>
+    </div>
+</section>
+<button class="btn" id="new-game-btn">Start New Game</button>
+
+<section id="active-game-feild">
+    <article id="game-over">
+        <h2>You won <span id="winner-name">winner name</span></h2>
+        <p>Click "start new game" above to start a new game</p>
+    </article>
+   <article id="game-board">
+    <p >It's your turn <span id="player-name">player name</span>!</p>
+    <ol id="game-feild" >
+        <li data-col="1" data-row="1"></li>
+        <li data-col="2" data-row="1"></li>
+        <li data-col="3" data-row="1"></li>
+        <li data-col="1" data-row="2"></li>
+        <li data-col="2" data-row="2"></li>
+        <li data-col="3" data-row="2"></li>
+        <li data-col="1" data-row="3"></li>
+        <li data-col="2" data-row="3"></li>
+        <li data-col="3" data-row="3"></li>
+    </ol>
+</article>
+</section>
+    </main>
+
+</body>
+</html>
